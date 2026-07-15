@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 180" role="img" aria-labelledby="title desc">
+<title id="title">GPSoftwareServices Support Manager</title>
+<desc id="desc">Blue GPS monogram with the GPSoftwareServices Support Manager wordmark.</desc>
+<rect width="640" height="180" rx="24" fill="#f5f8ff"/>
+<rect x="24" y="24" width="132" height="132" rx="30" fill="#1d4ed8"/>
+<text x="90" y="106" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="700" fill="#fff">GPS</text>
+<text x="184" y="76" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#172033">GPSoftwareServices</text>
+<text x="184" y="118" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#1d4ed8">Support Manager</text>
+</svg>

@@ -1,0 +1,20 @@
+<?php
+if ( ! defined( 'ABSPATH' ) ) { exit; }
+if (!defined('ABSPATH') || !current_user_can('manage_options')) exit;
+$gpsuma_requested_month = GPSUMA_Request::get_text( 'mese' );
+$gpsuma_ym = preg_match( '/^\d{4}-\d{2}$/', $gpsuma_requested_month ) ? $gpsuma_requested_month : current_time( 'Y-m' );
+$gpsuma_first=$gpsuma_ym.'-01'; $gpsuma_start=wp_date('Y-m-d', strtotime('monday this week', strtotime($gpsuma_first))); $gpsuma_last=wp_date('Y-m-t', strtotime($gpsuma_first)); $gpsuma_end=wp_date('Y-m-d', strtotime('sunday this week', strtotime($gpsuma_last)));
+$gpsuma_rows = ( new GPSUMA_DB() )->get_agenda_rows( $gpsuma_start, $gpsuma_end );
+$gpsuma_by=array(); foreach($gpsuma_rows as $gpsuma_r){$gpsuma_by[$gpsuma_r->data_intervento][]=$gpsuma_r;}
+$gpsuma_prev=wp_date('Y-m', strtotime($gpsuma_first.' -1 month')); $gpsuma_next=wp_date('Y-m', strtotime($gpsuma_first.' +1 month'));
+?>
+<div class="wrap gpsuma-wrapper"><div class="gpsuma-agenda-head"><div><h1>📅 Agenda interventi</h1><p>Programmazione mensile, timer e spostamento rapido degli appuntamenti.</p></div><a class="button button-primary" href="<?php echo esc_url(admin_url('admin.php?page=gpsuma-interventi')); ?>">+ Nuovo intervento</a></div>
+<div class="gpsuma-agenda-nav"><a class="button" href="<?php echo esc_url(admin_url('admin.php?page=gpsuma-agenda&mese='.$gpsuma_prev)); ?>">←</a><h2><?php echo esc_html(date_i18n('F Y',strtotime($gpsuma_first))); ?></h2><a class="button" href="<?php echo esc_url(admin_url('admin.php?page=gpsuma-agenda&mese='.$gpsuma_next)); ?>">→</a></div>
+<div class="gpsuma-calendar-grid"><?php foreach(array('Lun','Mar','Mer','Gio','Ven','Sab','Dom') as $gpsuma_d): ?><div class="gpsuma-cal-weekday"><?php echo esc_html( $gpsuma_d ); ?></div><?php endforeach; ?>
+<?php for($gpsuma_ts=strtotime($gpsuma_start);$gpsuma_ts<=strtotime($gpsuma_end);$gpsuma_ts+=DAY_IN_SECONDS): $gpsuma_date=wp_date('Y-m-d', $gpsuma_ts); $gpsuma_outside=substr($gpsuma_date,0,7)!==$gpsuma_ym; ?>
+<div class="gpsuma-cal-day <?php echo $gpsuma_outside?'is-outside':''; ?> <?php echo $gpsuma_date===current_time('Y-m-d')?'is-today':''; ?>"><div class="gpsuma-cal-number"><?php echo esc_html(wp_date('j', $gpsuma_ts)); ?></div>
+<?php foreach($gpsuma_by[$gpsuma_date]??array() as $gpsuma_i): $gpsuma_address=$gpsuma_i->indirizzo_intervento?:$gpsuma_i->cliente_indirizzo; ?>
+<div class="gpsuma-cal-event gpsuma-state-<?php echo esc_attr(sanitize_title($gpsuma_i->stato)); ?>"><div class="gpsuma-event-time"><?php echo $gpsuma_i->ora_intervento?esc_html(substr($gpsuma_i->ora_intervento,0,5)):'—'; ?> · <?php echo esc_html($gpsuma_i->tipo); ?></div><strong><?php echo esc_html($gpsuma_i->cliente_nome); ?></strong><div><?php echo esc_html(wp_trim_words($gpsuma_i->descrizione,8)); ?></div><div class="gpsuma-event-actions"><a href="<?php echo esc_url(admin_url('admin.php?page=gpsuma-interventi&modifica='.$gpsuma_i->id)); ?>">Apri</a></div>
+<div class="gpsuma-event-timer"><?php if(!$gpsuma_i->ora_inizio_effettiva): ?><a class="button button-small" href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=gpsuma_timer_intervento&azione=start&id='.$gpsuma_i->id),'gpsuma_timer_'.$gpsuma_i->id)); ?>">▶ Avvia</a><?php elseif(!$gpsuma_i->ora_fine_effettiva): ?><a class="button button-small" href="<?php echo esc_url(wp_nonce_url(admin_url('admin-post.php?action=gpsuma_timer_intervento&azione=stop&id='.$gpsuma_i->id),'gpsuma_timer_'.$gpsuma_i->id)); ?>">■ Termina</a><?php else: ?><span><?php echo esc_html($gpsuma_i->durata_minuti.' min'); ?></span><?php endif; ?></div>
+<details><summary>Sposta</summary><form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>"><input type="hidden" name="action" value="gpsuma_sposta_intervento"><input type="hidden" name="id" value="<?php echo esc_attr($gpsuma_i->id); ?>"><?php wp_nonce_field('gpsuma_sposta_'.$gpsuma_i->id); ?><input type="date" name="data" value="<?php echo esc_attr($gpsuma_date); ?>"><button class="button button-small">Salva</button></form></details></div>
+<?php endforeach; ?></div><?php endfor; ?></div></div>

@@ -1,0 +1,179 @@
+.gpsuma-portal,
+.gpsuma-portal * { box-sizing: border-box; }
+
+.gpsuma-portal {
+    --gpsuma-bg: #f4f7fb;
+    --gpsuma-surface: #ffffff;
+    --gpsuma-text: #172033;
+    --gpsuma-muted: #667085;
+    --gpsuma-border: #e4eaf2;
+    --gpsuma-primary: #2563eb;
+    --gpsuma-primary-dark: #1d4ed8;
+    --gpsuma-soft: #eef4ff;
+    max-width: 1180px;
+    margin: 32px auto;
+    padding: 28px;
+    border-radius: 24px;
+    background: var(--gpsuma-bg);
+    color: var(--gpsuma-text) !important;
+    font-family: inherit;
+    line-height: 1.55;
+}
+
+.gpsuma-portal h1,
+.gpsuma-portal h2,
+.gpsuma-portal h3,
+.gpsuma-portal h4,
+.gpsuma-portal p,
+.gpsuma-portal span,
+.gpsuma-portal label,
+.gpsuma-portal dt,
+.gpsuma-portal dd,
+.gpsuma-portal strong,
+.gpsuma-portal small { color: inherit; }
+
+.gpsuma-portal a { color: var(--gpsuma-primary); }
+
+.gpsuma-portal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 22px;
+    padding: 24px 26px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #172554, #1d4ed8);
+    color: #fff !important;
+    box-shadow: 0 14px 34px rgba(29, 78, 216, .18);
+}
+
+.gpsuma-brand-row { display: flex; align-items: center; gap: 16px; }
+.gpsuma-brand-logo img { max-width: 150px; max-height: 52px; width: auto; height: auto; display: block; }
+.gpsuma-portal-header h2 { margin: 3px 0 0; font-size: clamp(25px, 3vw, 38px); line-height: 1.15; color: #fff !important; }
+.gpsuma-eyebrow { display: block; font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; color: #bfdbfe !important; }
+.gpsuma-logout { display: inline-flex; align-items: center; min-height: 42px; padding: 0 16px; border: 1px solid rgba(255,255,255,.35); border-radius: 10px; color: #fff !important; text-decoration: none; font-weight: 700; }
+.gpsuma-logout:hover { background: rgba(255,255,255,.12); }
+
+.gpsuma-portal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px;
+    padding: 10px;
+    border: 1px solid var(--gpsuma-border);
+    border-radius: 14px;
+    background: #fff;
+}
+.gpsuma-portal-nav a { padding: 9px 13px; border-radius: 9px; color: #344054 !important; text-decoration: none; font-weight: 700; font-size: 14px; }
+.gpsuma-portal-nav a:hover { background: var(--gpsuma-soft); color: var(--gpsuma-primary) !important; }
+
+.gpsuma-portal-stats { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 14px; margin: 0 0 22px; }
+.gpsuma-portal-stats > div { min-height: 118px; padding: 20px; border: 1px solid var(--gpsuma-border); border-radius: 16px; background: #fff; box-shadow: 0 6px 18px rgba(15,23,42,.05); }
+.gpsuma-portal-stats strong { display: block; font-size: 32px; line-height: 1; color: var(--gpsuma-primary) !important; }
+.gpsuma-portal-stats span { display: block; margin-top: 10px; color: var(--gpsuma-muted) !important; font-size: 14px; font-weight: 700; }
+
+.gpsuma-portal-grid { display: grid; grid-template-columns: minmax(280px,.8fr) minmax(0,1.55fr); gap: 22px; }
+.gpsuma-panel,
+.gpsuma-alert,
+.gpsuma-portal-login { background: var(--gpsuma-surface); border: 1px solid var(--gpsuma-border); border-radius: 18px; padding: 26px; box-shadow: 0 8px 24px rgba(15,23,42,.05); color: var(--gpsuma-text) !important; }
+.gpsuma-panel { margin-top: 22px; scroll-margin-top: 20px; }
+.gpsuma-portal-grid .gpsuma-panel { margin-top: 0; }
+.gpsuma-panel h3 { margin: 0 0 20px; font-size: 25px; color: #172033 !important; }
+.gpsuma-panel-title { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.gpsuma-count { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 34px; padding: 0 10px; border-radius: 999px; background: var(--gpsuma-soft); color: var(--gpsuma-primary) !important; font-size: 13px; font-weight: 800; }
+
+.gpsuma-data-list { margin: 0; }
+.gpsuma-data-list > div { padding: 14px 0; border-bottom: 1px solid var(--gpsuma-border); }
+.gpsuma-data-list > div:last-child { border-bottom: 0; }
+.gpsuma-data-list dt { margin-bottom: 4px; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .04em; color: var(--gpsuma-muted) !important; }
+.gpsuma-data-list dd { margin: 0; color: #344054 !important; overflow-wrap: anywhere; }
+
+.gpsuma-device-list { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.gpsuma-device-card { display: flex; gap: 14px; min-width: 0; padding: 18px; border: 1px solid var(--gpsuma-border); border-radius: 14px; background: #fbfcfe; }
+.gpsuma-device-card h4 { margin: 0 0 7px; color: #172033 !important; font-size: 19px; overflow-wrap: anywhere; }
+.gpsuma-device-card p { margin: 4px 0; color: var(--gpsuma-muted) !important; font-size: 14px; }
+.gpsuma-device-icon { flex: 0 0 auto; font-size: 26px; }
+
+.gpsuma-package-list { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 14px; }
+.gpsuma-package-card { padding: 20px; border: 1px solid var(--gpsuma-border); border-radius: 14px; background: #fbfcfe; }
+.gpsuma-package-top,.gpsuma-package-numbers { display: flex; justify-content: space-between; gap: 14px; align-items: center; }
+.gpsuma-package-top h4 { margin: 0 0 4px; color: #172033 !important; }
+.gpsuma-package-status,.gpsuma-package-numbers,.gpsuma-package-expiry { color: var(--gpsuma-muted) !important; font-size: 13px; }
+.gpsuma-package-numbers { margin-top: 18px; }
+.gpsuma-frontend-progress { height: 10px; background: #e8eef8; border-radius: 999px; overflow: hidden; margin-top: 9px; }
+.gpsuma-frontend-progress span { display: block; height: 100%; background: linear-gradient(90deg,var(--gpsuma-primary),#60a5fa); border-radius: 999px; }
+
+.gpsuma-request-form { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 16px; }
+.gpsuma-request-form label { display: block; margin-bottom: 6px; color: #344054 !important; font-weight: 700; }
+.gpsuma-request-form input,.gpsuma-request-form select,.gpsuma-request-form textarea { width: 100%; border: 1px solid #cfd8e6; border-radius: 10px; padding: 11px 12px; background: #fff !important; color: #172033 !important; font: inherit; }
+.gpsuma-request-form input:focus,.gpsuma-request-form select:focus,.gpsuma-request-form textarea:focus { outline: 3px solid rgba(37,99,235,.14); border-color: var(--gpsuma-primary); }
+.gpsuma-request-description { grid-column: 1/-1; }
+.gpsuma-primary-button { border: 0; border-radius: 10px; padding: 12px 19px; background: var(--gpsuma-primary); color: #fff !important; font-weight: 800; cursor: pointer; width: max-content; }
+.gpsuma-primary-button:hover { background: var(--gpsuma-primary-dark); }
+
+.gpsuma-my-requests { margin-top: 28px; border-top: 1px solid var(--gpsuma-border); padding-top: 18px; }
+.gpsuma-my-requests article { padding: 17px 0; border-bottom: 1px solid var(--gpsuma-border); }
+.gpsuma-my-requests article > div:first-child { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.gpsuma-my-requests small { color: var(--gpsuma-muted) !important; margin-left: auto; }
+.gpsuma-status-pill { display: inline-flex; padding: 4px 9px; border-radius: 999px; background: #eef2f6; font-size: 12px; font-weight: 800; }
+.gpsuma-status-aperta { background:#fff3cd;color:#7a5a00 !important; }.gpsuma-status-in-lavorazione{background:#dbeafe;color:#1d4ed8 !important}.gpsuma-status-risolta{background:#dcfce7;color:#166534 !important}.gpsuma-status-chiusa{background:#e5e7eb;color:#374151 !important}
+.gpsuma-admin-reply { background: #f7faff; border-left: 4px solid var(--gpsuma-primary); padding: 12px 14px; border-radius: 8px; margin-top: 12px; }
+.gpsuma-success { background:#ecfdf3;border:1px solid #abefc6;color:#067647 !important;padding:12px 14px;border-radius:10px;margin-bottom:18px; }
+
+.gpsuma-intervention-list { display: grid; gap: 14px; }
+.gpsuma-intervention-card { display: grid; grid-template-columns: 86px 1fr; gap: 18px; padding: 20px; border: 1px solid var(--gpsuma-border); border-radius: 14px; background: #fbfcfe; }
+.gpsuma-intervention-card h4 { margin: 0 0 8px; color: #172033 !important; }
+.gpsuma-intervention-card p { margin: 7px 0; color: #475467 !important; }
+.gpsuma-intervention-date { text-align: center; border-right: 1px solid var(--gpsuma-border); padding-right: 18px; }
+.gpsuma-intervention-date strong { display: block; font-size: 29px; line-height: 1; color: var(--gpsuma-primary) !important; }
+.gpsuma-intervention-date span { display: block; margin-top: 6px; font-size: 13px; color: var(--gpsuma-muted) !important; }
+.gpsuma-meta { display: flex; gap: 12px; flex-wrap: wrap; font-size: 13px; color: var(--gpsuma-muted) !important; }
+
+.gpsuma-portal-login { max-width: 520px; margin: 60px auto; padding: 34px; }
+.gpsuma-login-brand { display: flex; align-items: center; gap: 14px; margin-bottom: 18px; }
+.gpsuma-login-brand img { max-width: 170px; max-height: 60px; width: auto; height: auto; }
+.gpsuma-portal-login h2 { margin: 0 0 8px; font-size: 30px; color: #172033 !important; }
+.gpsuma-portal-login p { color: var(--gpsuma-muted) !important; }
+.gpsuma-portal-login label { color: #344054 !important; font-weight: 700; }
+.gpsuma-portal-login input[type="text"],.gpsuma-portal-login input[type="password"] { width: 100%; min-height: 46px; border: 1px solid #cfd8e6; border-radius: 10px; background: #fff !important; color: #172033 !important; padding: 9px 11px; }
+.gpsuma-portal-login input[type="submit"] { min-height: 46px; padding: 0 24px; border: 0; border-radius: 10px; background: var(--gpsuma-primary); color: #fff !important; font-weight: 800; cursor: pointer; }
+.gpsuma-portal-login .login-remember { margin: 14px 0; }
+
+@media (max-width: 900px) {
+    .gpsuma-portal { margin: 18px 12px; padding: 18px; }
+    .gpsuma-portal-stats { grid-template-columns: repeat(2,minmax(0,1fr)); }
+    .gpsuma-portal-grid { grid-template-columns: 1fr; }
+    .gpsuma-device-list { grid-template-columns: 1fr; }
+    .gpsuma-request-form { grid-template-columns: 1fr; }
+    .gpsuma-request-description { grid-column: auto; }
+}
+@media (max-width: 600px) {
+    .gpsuma-portal { margin: 10px 0; padding: 14px; border-radius: 0; }
+    .gpsuma-portal-header { align-items: flex-start; padding: 20px; }
+    .gpsuma-brand-row { align-items: flex-start; }
+    .gpsuma-brand-logo { display: none; }
+    .gpsuma-portal-header h2 { font-size: 27px; }
+    .gpsuma-portal-stats { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .gpsuma-portal-stats > div { min-height: 96px; padding: 16px; }
+    .gpsuma-panel { padding: 20px; }
+    .gpsuma-intervention-card { grid-template-columns: 1fr; }
+    .gpsuma-intervention-date { text-align: left; border-right: 0; border-bottom: 1px solid var(--gpsuma-border); padding: 0 0 12px; }
+    .gpsuma-my-requests small { width: 100%; margin-left: 0; }
+}
+
+/* v1.2.0 - Scadenze e allegati */
+.gpsuma-deadline-list{display:grid;gap:10px}.gpsuma-deadline-list article{display:flex;justify-content:space-between;gap:18px;padding:16px;border:1px solid var(--gpsuma-border);border-left:5px solid #60a5fa;border-radius:12px;background:#fbfcfe}.gpsuma-deadline-list article>div{display:flex;flex-direction:column;gap:4px}.gpsuma-deadline-list article>div:last-child{text-align:right}.gpsuma-deadline-list span,.gpsuma-deadline-list small{color:var(--gpsuma-muted)!important}.gpsuma-deadline-list .is-due{border-left-color:#f59e0b;background:#fffbeb}.gpsuma-deadline-list .is-expired{border-left-color:#dc2626;background:#fff1f2}.gpsuma-frontend-attachments{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.gpsuma-frontend-attachments strong{width:100%}.gpsuma-frontend-attachments a{display:inline-flex;padding:8px 11px;border-radius:8px;background:#eff6ff;text-decoration:none;font-size:13px;font-weight:700}@media(max-width:600px){.gpsuma-deadline-list article{flex-direction:column}.gpsuma-deadline-list article>div:last-child{text-align:left}}
+
+.gpsuma-device-status{display:inline-flex;align-items:center;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;background:#e5e7eb;color:#374151;margin:3px 0}.gpsuma-device-status-operativo{background:#dcfce7;color:#166534}.gpsuma-device-status-da-controllare{background:#fef3c7;color:#92400e}.gpsuma-device-status-guasto{background:#fee2e2;color:#991b1b}.gpsuma-device-status-dismesso{background:#e5e7eb;color:#374151}
+
+
+/* Ticket v1.4.0 */
+.gpsuma-ticket-thread{display:flex;flex-direction:column;gap:10px;margin:18px 0;padding:14px;background:#f6f8fb;border-radius:12px}
+.gpsuma-ticket-message{max-width:82%;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #dfe5ec}
+.gpsuma-ticket-message.is-tech{margin-left:auto;background:#eef6ff;border-color:#c9e2ff}
+.gpsuma-ticket-message strong,.gpsuma-ticket-message small{display:block}.gpsuma-ticket-message small{opacity:.7;margin-top:2px}.gpsuma-ticket-message p{margin:8px 0 0}
+.gpsuma-ticket-attachments,.gpsuma-frontend-attachments{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.gpsuma-ticket-attachments strong{width:100%}
+.gpsuma-ticket-attachments a,.gpsuma-frontend-attachments a{display:inline-block;padding:7px 10px;border-radius:8px;background:#eef2f6;text-decoration:none}
+.gpsuma-ticket-comment-form{display:grid;gap:8px;margin-top:14px}.gpsuma-ticket-comment-form textarea{width:100%}
+.gpsuma-request-form input[type=file]{width:100%;padding:10px;border:1px dashed #b7c2ce;border-radius:8px;background:#fafcff}
+.gpsuma-status-nuovo{background:#e8f1ff!important;color:#1456a0!important}.gpsuma-status-preso-in-carico{background:#efe8ff!important;color:#6332a8!important}.gpsuma-status-in-attesa-cliente{background:#fff4d8!important;color:#8a6200!important}.gpsuma-status-risolto{background:#ddf7e8!important;color:#156b3a!important}.gpsuma-status-chiuso{background:#e8eaed!important;color:#4c5158!important}

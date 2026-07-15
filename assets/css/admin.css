@@ -1,0 +1,187 @@
+.gpsuma-wrapper{
+
+    max-width:1100px;
+
+}
+
+
+.gpsuma-subtitle{
+
+    font-size:16px;
+    color:#666;
+
+}
+
+
+
+.gpsuma-cards{
+
+    display:grid;
+    grid-template-columns:repeat(
+        auto-fit,
+        minmax(250px,1fr)
+    );
+
+    gap:20px;
+
+    margin-top:30px;
+
+}
+
+
+
+.gpsuma-card{
+
+    background:#fff;
+
+    border-radius:12px;
+
+    padding:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+
+}
+
+
+
+.gpsuma-card h2{
+
+    margin:0 0 8px;
+
+}
+
+
+
+.gpsuma-icon{
+
+    font-size:40px;
+
+}
+
+
+
+.gpsuma-box{
+
+    margin-top:35px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 3px 10px rgba(0,0,0,.08);
+
+}
+.gpsuma-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gpsuma-box-header h2 {
+    margin: 0;
+}
+
+.gpsuma-filter-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.gpsuma-table-scroll {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.gpsuma-note-cell {
+    max-width: 260px;
+    white-space: normal;
+}
+
+.gpsuma-actions {
+    white-space: nowrap;
+}
+
+.gpsuma-actions .button {
+    margin: 2px 2px 2px 0;
+}
+
+.gpsuma-card-link{color:inherit;text-decoration:none}.gpsuma-card-link:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.12)}
+.gpsuma-form-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}.gpsuma-form-grid p{margin:0}.gpsuma-form-grid label,.gpsuma-box>form>p>label{display:block;font-weight:600;margin-bottom:6px}.gpsuma-form-grid input,.gpsuma-form-grid select{width:100%}.gpsuma-device-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px;padding:14px;background:#f6f7f7;border:1px solid #dcdcde;border-radius:6px;margin-bottom:18px}.gpsuma-device-checks label{padding:6px}
+
+.gpsuma-progress{height:8px;background:#e5e7eb;border-radius:999px;overflow:hidden;margin-top:7px;min-width:130px}.gpsuma-progress span{display:block;height:100%;background:#2271b1;border-radius:999px}
+
+/* Dashboard v0.7 */
+.gpsuma-dashboard{max-width:1280px}.gpsuma-dashboard-header{display:flex;justify-content:space-between;align-items:center;gap:24px;margin:18px 0 24px}.gpsuma-dashboard-header h1{margin:3px 0 5px;font-size:30px;line-height:1.2}.gpsuma-eyebrow-admin{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:#646970}.button-hero{min-height:42px;display:inline-flex!important;align-items:center;padding:0 18px!important}.gpsuma-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.gpsuma-stat-card{position:relative;display:flex;flex-direction:column;min-height:150px;padding:22px;background:#fff;border:1px solid #e2e4e7;border-radius:14px;text-decoration:none;color:#1d2327;box-shadow:0 4px 15px rgba(0,0,0,.045);transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}.gpsuma-stat-card:hover{color:#1d2327;transform:translateY(-2px);box-shadow:0 10px 26px rgba(0,0,0,.08);border-color:#b8c7d9}.gpsuma-stat-icon{position:absolute;right:20px;top:18px;font-size:28px}.gpsuma-stat-label{font-size:13px;font-weight:700;color:#646970}.gpsuma-stat-card strong{font-size:36px;line-height:1.1;margin:14px 0 7px}.gpsuma-stat-card small{margin-top:auto;color:#646970}.gpsuma-dashboard-columns{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(330px,.85fr);gap:22px}.gpsuma-dashboard-panel{margin-top:22px;padding:0;overflow:hidden}.gpsuma-panel-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:22px 24px;border-bottom:1px solid #edf0f2}.gpsuma-panel-heading h2{margin:0 0 5px}.gpsuma-panel-heading p{margin:0;color:#646970}.gpsuma-panel-heading>a{font-weight:600;text-decoration:none;white-space:nowrap}.gpsuma-activity-list,.gpsuma-expiry-list{display:grid}.gpsuma-activity-item{display:grid;grid-template-columns:62px minmax(0,1fr);gap:16px;padding:18px 24px;color:#1d2327;text-decoration:none;border-bottom:1px solid #edf0f2}.gpsuma-activity-item:last-child,.gpsuma-expiry-item:last-child{border-bottom:0}.gpsuma-activity-item:hover,.gpsuma-expiry-item:hover{background:#f8fafb;color:#1d2327}.gpsuma-activity-date{height:58px;border-radius:10px;background:#f0f5fa;text-align:center;display:flex;flex-direction:column;justify-content:center}.gpsuma-activity-date strong{font-size:21px;line-height:1}.gpsuma-activity-date span{text-transform:uppercase;font-size:11px;color:#646970;margin-top:5px}.gpsuma-activity-content{min-width:0}.gpsuma-activity-topline{display:flex;justify-content:space-between;gap:12px;align-items:center}.gpsuma-activity-content>span{display:block;font-size:13px;color:#2271b1;font-weight:600;margin-top:3px}.gpsuma-activity-content p{margin:6px 0;color:#50575e}.gpsuma-activity-content small{color:#646970}.gpsuma-status-pill{display:inline-flex;align-items:center;padding:4px 9px;border-radius:999px;background:#eef1f4;font-size:11px;font-weight:700;white-space:nowrap}.gpsuma-status-completato{background:#e8f5ec;color:#17733b}.gpsuma-status-pianificato{background:#eef4ff;color:#2557a7}.gpsuma-status-in-corso{background:#fff4d6;color:#8a5b00}.gpsuma-status-annullato{background:#fce8e8;color:#a22b2b}.gpsuma-expiry-item{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:19px 24px;color:#1d2327;text-decoration:none;border-bottom:1px solid #edf0f2}.gpsuma-expiry-main>strong,.gpsuma-expiry-main>span{display:block}.gpsuma-expiry-main>span{color:#646970;margin-top:3px}.gpsuma-expiry-main small{display:block;color:#646970;margin-top:6px}.gpsuma-expiry-date{text-align:right}.gpsuma-expiry-date strong,.gpsuma-expiry-date span{display:block}.gpsuma-expiry-date span{margin-top:5px;font-size:12px;color:#b32d2e;font-weight:700}.gpsuma-empty-state{padding:36px 24px;text-align:center;color:#646970}.gpsuma-empty-success span{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:999px;background:#e8f5ec;color:#17733b;font-weight:700;margin-right:8px}.gpsuma-quick-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:22px 0}.gpsuma-quick-actions a{display:grid;grid-template-columns:46px 1fr;column-gap:14px;align-items:center;padding:19px 21px;background:#fff;border:1px solid #e2e4e7;border-radius:12px;color:#1d2327;text-decoration:none}.gpsuma-quick-actions a:hover{border-color:#8c9db1;color:#1d2327}.gpsuma-quick-actions span{grid-row:1/3;font-size:29px}.gpsuma-quick-actions strong,.gpsuma-quick-actions small{display:block}.gpsuma-quick-actions small{margin-top:3px;color:#646970}
+@media(max-width:1050px){.gpsuma-stat-grid{grid-template-columns:repeat(2,1fr)}.gpsuma-dashboard-columns{grid-template-columns:1fr}.gpsuma-quick-actions{grid-template-columns:1fr}}
+@media(max-width:600px){.gpsuma-dashboard-header{align-items:flex-start;flex-direction:column}.gpsuma-stat-grid{grid-template-columns:1fr}.gpsuma-activity-topline{align-items:flex-start;flex-direction:column}.gpsuma-expiry-item{grid-template-columns:1fr}.gpsuma-expiry-date{text-align:left}.gpsuma-dashboard-panel{border-radius:10px}.gpsuma-panel-heading{padding:18px}.gpsuma-activity-item,.gpsuma-expiry-item{padding:16px 18px}}
+
+/* Customer 360 v0.8 */
+.gpsuma-customer-360{max-width:1280px}.gpsuma-c360-topbar{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin:18px 0 22px;padding:26px 28px;background:linear-gradient(135deg,#fff 0%,#f4f8fc 100%);border:1px solid #dfe6ee;border-radius:16px}.gpsuma-back-link{text-decoration:none;color:#646970;font-weight:600}.gpsuma-c360-topbar h1{font-size:32px;margin:10px 0 9px}.gpsuma-c360-contact{display:flex;gap:18px;flex-wrap:wrap;color:#50575e}.gpsuma-c360-actions{display:flex;gap:9px;flex-wrap:wrap}.gpsuma-c360-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.gpsuma-c360-stats>a,.gpsuma-c360-stats>div{display:grid;grid-template-columns:42px 1fr;column-gap:12px;align-items:center;padding:20px;background:#fff;border:1px solid #e2e8ef;border-radius:13px;color:#1d2327;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.035)}.gpsuma-c360-stats span{grid-row:1/3;font-size:29px}.gpsuma-c360-stats strong{font-size:25px;line-height:1.1}.gpsuma-c360-stats small{color:#646970;margin-top:4px}.gpsuma-c360-grid{display:grid;grid-template-columns:1.4fr .8fr;gap:20px}.gpsuma-c360-main-grid{grid-template-columns:1fr 1fr}.gpsuma-customer-360 .gpsuma-box{margin-top:20px}.gpsuma-section-title{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-bottom:16px;border-bottom:1px solid #edf0f2}.gpsuma-section-title>div{display:flex;align-items:center;gap:10px}.gpsuma-section-title h2{margin:0}.gpsuma-section-title>a{text-decoration:none;font-weight:600}.gpsuma-section-icon{font-size:23px}.gpsuma-c360-package h3{margin:20px 0 10px;font-size:20px}.gpsuma-c360-package-count{display:flex;align-items:baseline;gap:9px}.gpsuma-c360-package-count strong{font-size:38px}.gpsuma-c360-package-count span{color:#646970}.gpsuma-progress-large{height:11px;margin:16px 0}.gpsuma-c360-meta{display:flex;justify-content:space-between;gap:15px;color:#646970;flex-wrap:wrap}.gpsuma-access-ok{color:#17733b;font-weight:700}.gpsuma-access-warning{color:#996800;font-weight:700}.gpsuma-muted{color:#646970}.gpsuma-internal-note{margin-top:20px;padding:15px;background:#fff8e5;border-left:4px solid #dba617;border-radius:6px}.gpsuma-internal-note p{margin-bottom:0}.gpsuma-c360-device-list,.gpsuma-c360-intervention-list{display:grid;margin:4px -25px 18px}.gpsuma-c360-device-list>a{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:center;padding:14px 25px;border-bottom:1px solid #edf0f2;text-decoration:none;color:#1d2327}.gpsuma-c360-device-list>a:hover,.gpsuma-c360-intervention-list>a:hover{background:#f8fafc}.gpsuma-device-avatar{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:#eef4fa;border-radius:10px}.gpsuma-c360-device-list strong,.gpsuma-c360-device-list small{display:block}.gpsuma-c360-device-list small{color:#646970;margin-top:3px}.gpsuma-c360-device-list b{font-size:25px;color:#8c8f94}.gpsuma-c360-intervention-list>a{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:14px;align-items:center;padding:15px 25px;border-bottom:1px solid #edf0f2;text-decoration:none;color:#1d2327}.gpsuma-c360-intervention-list time{font-weight:700;color:#2271b1}.gpsuma-c360-intervention-list strong,.gpsuma-c360-intervention-list small{display:block}.gpsuma-c360-intervention-list small{margin-top:3px;color:#646970}.gpsuma-c360-intervention-list em{font-style:normal}.gpsuma-full-button{width:100%;text-align:center;justify-content:center}.gpsuma-timeline{position:relative;margin-top:22px}.gpsuma-timeline:before{content:"";position:absolute;left:8px;top:5px;bottom:10px;width:2px;background:#dfe5eb}.gpsuma-timeline-item{position:relative;display:grid;grid-template-columns:18px 92px minmax(0,1fr);gap:16px;padding:0 0 22px;text-decoration:none;color:#1d2327}.gpsuma-timeline-dot{z-index:1;width:12px;height:12px;margin-top:3px;border:3px solid #fff;border-radius:50%;background:#2271b1;box-shadow:0 0 0 2px #2271b1}.gpsuma-timeline-dispositivo .gpsuma-timeline-dot{background:#178647;box-shadow:0 0 0 2px #178647}.gpsuma-timeline-pacchetto .gpsuma-timeline-dot{background:#dba617;box-shadow:0 0 0 2px #dba617}.gpsuma-timeline-cliente .gpsuma-timeline-dot{background:#8c5fd3;box-shadow:0 0 0 2px #8c5fd3}.gpsuma-timeline-item time{font-size:12px;color:#646970}.gpsuma-timeline-item strong{font-size:15px}.gpsuma-timeline-item p{margin:4px 0 0;color:#646970}.gpsuma-timeline-item:hover strong{color:#2271b1}
+@media(max-width:900px){.gpsuma-c360-topbar{flex-direction:column}.gpsuma-c360-stats{grid-template-columns:repeat(2,1fr)}.gpsuma-c360-grid,.gpsuma-c360-main-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.gpsuma-c360-stats{grid-template-columns:1fr}.gpsuma-c360-topbar{padding:20px}.gpsuma-c360-topbar h1{font-size:27px}.gpsuma-c360-actions{width:100%}.gpsuma-c360-actions .button{flex:1;text-align:center}.gpsuma-c360-intervention-list>a{grid-template-columns:50px 1fr}.gpsuma-c360-intervention-list em{grid-column:2}.gpsuma-timeline-item{grid-template-columns:18px 70px 1fr;gap:10px}}
+
+/* v0.9 - Scheda dispositivo */
+.gpsuma-device-hero .gpsuma-customer-avatar{background:linear-gradient(135deg,#e8f1ff,#d8e8ff)}
+.gpsuma-device-timeline{margin-top:12px}
+.gpsuma-device-timeline article{display:grid;grid-template-columns:95px 18px 1fr;gap:14px;position:relative;padding-bottom:25px}
+.gpsuma-device-timeline article:not(:last-child):before{content:"";position:absolute;left:103px;top:18px;bottom:0;width:2px;background:#e5e7eb}
+.gpsuma-device-timeline-date{text-align:right;padding-top:2px}.gpsuma-device-timeline-date strong,.gpsuma-device-timeline-date small{display:block}.gpsuma-device-timeline-date small{color:#64748b;margin-top:3px}
+.gpsuma-device-timeline-dot{width:12px;height:12px;border:3px solid #2271b1;border-radius:50%;background:#fff;margin-top:5px;z-index:1}
+.gpsuma-device-timeline-content{background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:16px}.gpsuma-device-timeline-content>div:first-child{display:flex;justify-content:space-between;gap:10px}.gpsuma-device-timeline-content h3{margin:10px 0 6px}.gpsuma-device-timeline-content p{margin:7px 0;line-height:1.55}
+.gpsuma-status-pill{display:inline-flex;padding:4px 9px;border-radius:999px;background:#e8f1ff;color:#135e96;font-size:12px;font-weight:700}
+.gpsuma-device-details{margin:0}.gpsuma-device-details>div{padding:11px 0;border-bottom:1px solid #eef0f2}.gpsuma-device-details>div:last-child{border-bottom:0}.gpsuma-device-details dt{font-size:12px;color:#64748b;text-transform:uppercase;letter-spacing:.04em}.gpsuma-device-details dd{margin:4px 0 0;font-weight:600;overflow-wrap:anywhere}.gpsuma-preline{line-height:1.6}
+@media(max-width:700px){.gpsuma-device-timeline article{grid-template-columns:1fr;gap:7px}.gpsuma-device-timeline article:before,.gpsuma-device-timeline-dot{display:none}.gpsuma-device-timeline-date{text-align:left;display:flex;gap:10px}.gpsuma-customer-actions{display:flex;flex-wrap:wrap;gap:6px}}
+
+.gpsuma-request-admin-list{display:grid;gap:18px}.gpsuma-request-admin-card{margin-top:18px}.gpsuma-request-admin-head{display:flex;justify-content:space-between;gap:20px;align-items:flex-start}.gpsuma-request-admin-head h2{margin:8px 0 4px}.gpsuma-priority{font-weight:700;background:#f1f5f9;padding:7px 10px;border-radius:8px}.gpsuma-request-admin-form{display:grid;grid-template-columns:220px 1fr auto;gap:14px;align-items:end;margin-top:18px;padding-top:18px;border-top:1px solid #e5e7eb}.gpsuma-request-admin-form select,.gpsuma-request-admin-form textarea{width:100%}.gpsuma-request-note{min-width:0}.gpsuma-status-pill{display:inline-flex;padding:4px 9px;border-radius:999px;background:#eef2f6;font-size:12px;font-weight:700}.gpsuma-status-aperta{background:#fff3cd;color:#7a5a00}.gpsuma-status-in-lavorazione{background:#dbeafe;color:#1d4ed8}.gpsuma-status-risolta{background:#dcfce7;color:#166534}.gpsuma-status-chiusa{background:#e5e7eb;color:#374151}@media(max-width:900px){.gpsuma-request-admin-form{grid-template-columns:1fr}.gpsuma-request-admin-head{flex-direction:column}}
+
+/* v1.2.0 - Allegati e scadenze */
+.gpsuma-attachments-box{margin:20px 0;padding:18px;border:1px solid #dbe3ee;border-radius:12px;background:#f8fafc}.gpsuma-admin-attachment-list{display:grid;gap:8px;margin-top:12px}.gpsuma-admin-attachment-list label{display:flex;justify-content:space-between;gap:16px;padding:10px 12px;background:#fff;border:1px solid #e5e7eb;border-radius:8px}.gpsuma-timeline-attachments{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.gpsuma-timeline-attachments strong{width:100%}.gpsuma-timeline-attachments a{display:inline-flex;padding:7px 10px;border-radius:8px;background:#eff6ff;text-decoration:none}.gpsuma-device-deadlines{display:grid;gap:10px}.gpsuma-device-deadlines a{display:flex;flex-direction:column;gap:3px;padding:12px;border:1px solid #e5e7eb;border-left:4px solid #f59e0b;border-radius:9px;text-decoration:none;background:#fff}.gpsuma-device-deadlines span,.gpsuma-device-deadlines small{color:#64748b}.gpsuma-expired td{background:#fff1f2!important}.gpsuma-due td{background:#fffbeb!important}
+
+
+/* v1.3.0 */
+.gpsuma-device-status{display:inline-flex;align-items:center;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:700;font-style:normal;white-space:nowrap;background:#e5e7eb;color:#374151}
+.gpsuma-device-status-operativo{background:#dcfce7;color:#166534}.gpsuma-device-status-da-controllare{background:#fef3c7;color:#92400e}.gpsuma-device-status-guasto{background:#fee2e2;color:#991b1b}.gpsuma-device-status-dismesso{background:#e5e7eb;color:#374151}
+.gpsuma-global-search,.gpsuma-dashboard-search{display:flex;gap:10px;align-items:center}.gpsuma-global-search input,.gpsuma-dashboard-search input{flex:1;min-height:42px;font-size:15px}.gpsuma-dashboard-search{margin:14px 0 18px;padding:14px;background:#fff;border:1px solid #e5e7eb;border-radius:12px}
+.gpsuma-search-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.gpsuma-search-result{display:flex;flex-direction:column;gap:4px;padding:12px 0;border-bottom:1px solid #e5e7eb;text-decoration:none}.gpsuma-search-result:last-child{border-bottom:0}.gpsuma-search-result strong{font-size:14px}.gpsuma-search-result span,.gpsuma-search-result small{color:#646970}.gpsuma-search-result em{align-self:flex-start;margin-top:3px}
+.gpsuma-dashboard-insights{display:grid;grid-template-columns:1fr 1.4fr;gap:18px;margin:20px 0}.gpsuma-status-summary{display:grid;gap:10px}.gpsuma-status-summary>div{display:flex;justify-content:space-between;align-items:center}.gpsuma-status-summary strong{font-size:20px}.gpsuma-type-bars{display:grid;gap:9px}.gpsuma-type-bars>div{display:grid;grid-template-columns:120px 1fr 35px;gap:10px;align-items:center}.gpsuma-type-bars>div>div{height:9px;background:#e5e7eb;border-radius:99px;overflow:hidden}.gpsuma-type-bars i{display:block;height:100%;background:#2271b1;border-radius:99px}
+@media(max-width:900px){.gpsuma-search-grid,.gpsuma-dashboard-insights{grid-template-columns:1fr}}
+
+
+/* Ticket v1.4.0 */
+.gpsuma-ticket-thread{display:flex;flex-direction:column;gap:10px;margin:18px 0;padding:14px;background:#f6f8fb;border-radius:12px}
+.gpsuma-ticket-message{max-width:82%;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #dfe5ec}
+.gpsuma-ticket-message.is-tech{margin-left:auto;background:#eef6ff;border-color:#c9e2ff}
+.gpsuma-ticket-message strong,.gpsuma-ticket-message small{display:block}.gpsuma-ticket-message small{opacity:.7;margin-top:2px}.gpsuma-ticket-message p{margin:8px 0 0}
+.gpsuma-ticket-attachments,.gpsuma-frontend-attachments{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.gpsuma-ticket-attachments strong{width:100%}
+.gpsuma-ticket-attachments a,.gpsuma-frontend-attachments a{display:inline-block;padding:7px 10px;border-radius:8px;background:#eef2f6;text-decoration:none}
+.gpsuma-ticket-comment-form{display:grid;gap:8px;margin-top:14px}.gpsuma-ticket-comment-form textarea{width:100%}
+.gpsuma-request-form input[type=file]{width:100%;padding:10px;border:1px dashed #b7c2ce;border-radius:8px;background:#fafcff}
+.gpsuma-status-nuovo{background:#e8f1ff!important;color:#1456a0!important}.gpsuma-status-preso-in-carico{background:#efe8ff!important;color:#6332a8!important}.gpsuma-status-in-attesa-cliente{background:#fff4d8!important;color:#8a6200!important}.gpsuma-status-risolto{background:#ddf7e8!important;color:#156b3a!important}.gpsuma-status-chiuso{background:#e8eaed!important;color:#4c5158!important}
+
+/* v1.5.0 - Agenda e gestione operativa */
+.gpsuma-agenda-head,.gpsuma-agenda-nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.gpsuma-agenda-nav{justify-content:center;margin:18px 0}.gpsuma-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(140px,1fr));border:1px solid #dcdcde;background:#fff;overflow:auto}.gpsuma-cal-weekday{padding:10px;text-align:center;font-weight:700;background:#f0f0f1;border-right:1px solid #dcdcde}.gpsuma-cal-day{min-height:170px;padding:8px;border-right:1px solid #dcdcde;border-top:1px solid #dcdcde;background:#fff}.gpsuma-cal-day.is-outside{background:#f8f8f8;color:#777}.gpsuma-cal-day.is-today{box-shadow:inset 0 0 0 2px #2271b1}.gpsuma-cal-number{font-weight:700;margin-bottom:7px}.gpsuma-cal-event{padding:8px;margin:0 0 7px;border-left:4px solid #2271b1;background:#eef6fc;border-radius:4px;font-size:12px}.gpsuma-state-completato{border-color:#00a32a;background:#edfaef}.gpsuma-state-annullato{border-color:#d63638;background:#fcf0f1}.gpsuma-state-in-corso{border-color:#dba617;background:#fff8e5}.gpsuma-event-time{font-size:11px;color:#50575e}.gpsuma-event-actions,.gpsuma-event-timer{margin-top:5px}.gpsuma-cal-event details{margin-top:5px}.gpsuma-cal-event details form{display:flex;gap:4px;flex-wrap:wrap}.gpsuma-work-box,.gpsuma-signature-box{margin:18px 0;padding:16px;border:1px solid #dcdcde;border-radius:8px;background:#fff}.gpsuma-work-box label{display:inline-block;margin:0 18px 10px 0}.gpsuma-signature-box canvas{display:block;width:100%;max-width:700px;height:180px;border:1px dashed #8c8f94;background:#fff;touch-action:none}.gpsuma-signature-preview{max-width:350px;border:1px solid #ddd;background:#fff}@media(max-width:900px){.gpsuma-calendar-grid{grid-template-columns:repeat(7,180px)}}
+
+.gpsuma-economic-box{margin:20px 0}.gpsuma-total-preview{display:flex;align-items:center;min-height:40px;font-size:22px}.gpsuma-stats-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:18px 0}.gpsuma-stat-card{background:#fff;border:1px solid #dcdcde;border-radius:10px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.04)}.gpsuma-stat-card span{display:block;color:#646970;margin-bottom:8px}.gpsuma-stat-card strong{font-size:25px}@media(max-width:900px){.gpsuma-stats-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:520px){.gpsuma-stats-grid{grid-template-columns:1fr}}
+
+.gpsuma-tenant-switch select{margin-left:8px;min-width:220px}.gpsuma-badge-orange{background:#fff3cd;color:#8a5a00}.gpsuma-badge-green{background:#d1e7dd;color:#0f5132}
+
+/* === GPSUMA 2.0 application shell === */
+.gpsuma-admin-v2 #wpcontent{padding-left:0;background:#f4f7fb;min-height:100vh}.gpsuma-admin-v2 #wpbody-content{padding-bottom:40px}.gpsuma-admin-v2 .wrap{margin:0;padding:28px 32px;box-sizing:border-box}.gpsuma-admin-v2 .notice:not(.gpsuma-tenant-switch){margin:16px 32px}.gpsuma-v2-topbar{position:sticky;top:32px;z-index:90;display:flex;align-items:center;gap:24px;height:72px;padding:0 28px;background:#fff;border-bottom:1px solid #e5eaf2;box-shadow:0 3px 16px rgba(15,23,42,.05)}.gpsuma-v2-brand{display:flex;align-items:center;gap:11px;min-width:230px}.gpsuma-v2-brand strong{display:block;color:#172033;font-size:14px}.gpsuma-v2-brand small{display:block;color:#7a8699;font-size:11px;margin-top:2px}.gpsuma-v2-logo{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--gpsuma-primary);color:#fff;font-size:20px;font-weight:800;box-shadow:0 8px 18px var(--gpsuma-primary-soft)}.gpsuma-v2-nav{display:flex;align-self:stretch;align-items:center;gap:4px;flex:1}.gpsuma-v2-nav a{display:flex;align-items:center;gap:7px;height:40px;padding:0 12px;border-radius:10px;color:#566176;text-decoration:none;font-weight:600;font-size:13px}.gpsuma-v2-nav a:hover,.gpsuma-v2-nav a.is-active{background:var(--gpsuma-primary-soft);color:var(--gpsuma-primary)}.gpsuma-v2-nav .dashicons{font-size:18px;width:18px;height:18px}.gpsuma-v2-actions{display:flex;align-items:center;gap:9px}.gpsuma-v2-search{display:grid;place-items:center;width:38px;height:38px;border:1px solid #dfe5ee;border-radius:10px;color:#4b5563}.gpsuma-v2-new{padding:10px 15px;border-radius:10px;background:var(--gpsuma-primary);color:#fff!important;text-decoration:none;font-weight:700;box-shadow:0 7px 16px var(--gpsuma-primary-soft)}.gpsuma-tenant-switch{margin:14px 32px 0!important;border:0!important;border-radius:10px;background:#eef4ff!important;box-shadow:none!important}.gpsuma-dashboard-v2{max-width:none!important}.gpsuma-v2-hero{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;padding:10px 0 24px}.gpsuma-v2-kicker{font-size:11px;letter-spacing:.13em;color:var(--gpsuma-primary);font-weight:800}.gpsuma-v2-hero h1{margin:7px 0 5px;font-size:30px;line-height:1.15;color:#162033}.gpsuma-v2-hero p{margin:0;color:#6b7688;font-size:14px}.gpsuma-dashboard-search{display:flex;align-items:center;gap:8px;min-width:380px;background:#fff;border:1px solid #dfe5ee;border-radius:13px;padding:6px 7px 6px 12px;box-shadow:0 5px 18px rgba(15,23,42,.05)}.gpsuma-dashboard-search .dashicons{color:#8791a3}.gpsuma-dashboard-search input{flex:1;border:0!important;box-shadow:none!important;background:transparent!important}.gpsuma-dashboard-search button{border:0;border-radius:9px;padding:9px 15px;background:#172033;color:#fff;font-weight:700;cursor:pointer}.gpsuma-v2-metrics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-bottom:18px}.gpsuma-v2-metrics>a{position:relative;display:flex;flex-direction:column;min-height:124px;padding:18px;background:#fff;border:1px solid #e4e9f1;border-radius:16px;text-decoration:none;box-shadow:0 6px 22px rgba(15,23,42,.045);transition:.2s}.gpsuma-v2-metrics>a:hover{transform:translateY(-2px);box-shadow:0 11px 28px rgba(15,23,42,.09)}.gpsuma-v2-metrics .dashicons{position:absolute;right:16px;top:16px;color:var(--gpsuma-primary);background:var(--gpsuma-primary-soft);padding:8px;border-radius:10px}.gpsuma-v2-metrics small{color:#7a8597;font-weight:600}.gpsuma-v2-metrics strong{margin-top:15px;color:#172033;font-size:25px;line-height:1}.gpsuma-v2-metrics em{margin-top:auto;color:#98a1b0;font-size:11px;font-style:normal}.gpsuma-v2-grid-main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(320px,.8fr);gap:18px}.gpsuma-v2-grid-bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin-top:18px}.gpsuma-v2-panel{background:#fff;border:1px solid #e4e9f1;border-radius:17px;padding:20px;box-shadow:0 6px 22px rgba(15,23,42,.04)}.gpsuma-v2-panel header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px}.gpsuma-v2-panel h2{margin:0;color:#172033;font-size:16px}.gpsuma-v2-panel header p{margin:4px 0 0;color:#8993a3;font-size:12px}.gpsuma-v2-panel header>a{color:var(--gpsuma-primary);text-decoration:none;font-size:12px;font-weight:700}.gpsuma-v2-agenda-list>a{display:grid;grid-template-columns:50px 1fr 60px auto;align-items:center;gap:13px;padding:12px 4px;border-top:1px solid #eef1f5;text-decoration:none}.gpsuma-v2-agenda-list>a:first-child{border-top:0}.gpsuma-v2-agenda-list time{display:flex;flex-direction:column;align-items:center;padding:7px;border-radius:11px;background:#f4f7fb}.gpsuma-v2-agenda-list time b{font-size:17px;color:#172033}.gpsuma-v2-agenda-list time span{text-transform:uppercase;font-size:9px;color:#7b8798}.gpsuma-v2-agenda-list div strong,.gpsuma-v2-agenda-list div span{display:block}.gpsuma-v2-agenda-list div strong{color:#253047}.gpsuma-v2-agenda-list div span{color:#8490a0;font-size:12px;margin-top:3px}.gpsuma-v2-agenda-list em{font-style:normal;color:#566176;font-weight:700}.gpsuma-v2-ticket-list>a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 2px;border-top:1px solid #eef1f5;text-decoration:none}.gpsuma-v2-ticket-list>a:first-child{border-top:0}.gpsuma-v2-ticket-list strong,.gpsuma-v2-ticket-list span{display:block}.gpsuma-v2-ticket-list strong{color:#253047;font-size:13px}.gpsuma-v2-ticket-list span{color:#8993a3;font-size:11px;margin-top:3px}.gpsuma-v2-ticket-list b{padding:5px 8px;border-radius:999px;font-size:10px}.gpsuma-priority-urgente{background:#fee2e2;color:#b91c1c}.gpsuma-priority-alta{background:#ffedd5;color:#c2410c}.gpsuma-priority-normale{background:#dbeafe;color:#1d4ed8}.gpsuma-priority-bassa{background:#e5e7eb;color:#4b5563}.gpsuma-v2-health{display:flex;flex-wrap:wrap;gap:10px}.gpsuma-v2-health>div{display:flex;justify-content:space-between;align-items:center;flex:1 1 42%;padding:10px;background:#f8fafc;border-radius:10px}.gpsuma-v2-contract-number{display:flex;flex-direction:column;align-items:flex-start}.gpsuma-v2-contract-number strong{font-size:38px;color:#172033}.gpsuma-v2-contract-number span{color:#7c8797}.gpsuma-v2-contract-number a{margin-top:15px;color:var(--gpsuma-primary);font-weight:700;text-decoration:none}.gpsuma-v2-quick{display:grid;grid-template-columns:1fr 1fr;gap:9px}.gpsuma-v2-quick a{padding:11px;border-radius:10px;background:#f4f7fb;color:#3d4960;text-decoration:none;font-weight:700;text-align:center}.gpsuma-v2-quick a:hover{background:var(--gpsuma-primary-soft);color:var(--gpsuma-primary)}.gpsuma-v2-enter{animation:gpsumaV2In .35s ease both}@keyframes gpsumaV2In{from{opacity:.4;transform:translateY(5px)}to{opacity:1;transform:none}}@media(max-width:1280px){.gpsuma-v2-metrics{grid-template-columns:repeat(3,1fr)}.gpsuma-v2-nav a{padding:0 8px}.gpsuma-v2-nav a{font-size:0}.gpsuma-v2-nav a .dashicons{font-size:19px}}@media(max-width:900px){.gpsuma-v2-topbar{top:46px;padding:0 14px}.gpsuma-v2-brand{min-width:0}.gpsuma-v2-brand div{display:none}.gpsuma-v2-actions .gpsuma-v2-new{display:none}.gpsuma-admin-v2 .wrap{padding:20px 14px}.gpsuma-v2-hero{align-items:stretch;flex-direction:column}.gpsuma-dashboard-search{min-width:0}.gpsuma-v2-metrics{grid-template-columns:repeat(2,1fr)}.gpsuma-v2-grid-main,.gpsuma-v2-grid-bottom{grid-template-columns:1fr}.gpsuma-v2-agenda-list>a{grid-template-columns:45px 1fr auto}.gpsuma-v2-agenda-list>a>i{display:none}}
+
+/* GPSoftwareServices Support Manager 5.1 branding */
+.gpsuma-v2-logo { background: #145bb4 !important; color: #fff !important; border-radius: 10px; }
+.gpsuma-v2-brand strong { color: #17324d; }
+.gpsuma-v2-brand small { color: #145bb4; }
