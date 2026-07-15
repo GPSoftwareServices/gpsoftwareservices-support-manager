@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 Plugin Name: GPSoftwareServices Support Manager
 Plugin URI: https://gpsoftwareservices.it/gpsoftwareservices-support-manager/
 Description: Manage customers, assets, technical interventions, service contracts and a secure customer portal directly in WordPress.
-Version: 5.2.1
+Version: 5.2.2
 Requires at least: 6.4
 Requires PHP: 7.4
 Author: GP Software Services
@@ -22,7 +22,7 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-define('GPSUMA_VERSION', '5.2.1');
+define('GPSUMA_VERSION', '5.2.2');
 define('GPSUMA_PATH', plugin_dir_path(__FILE__));
 define('GPSUMA_URL', plugin_dir_url(__FILE__));
 

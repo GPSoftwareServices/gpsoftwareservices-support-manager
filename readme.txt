@@ -4,7 +4,7 @@ Tags: technical support, customer portal, asset management, service contracts, h
 Requires at least: 6.4
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 5.2.1
+Stable tag: 5.2.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -82,6 +82,11 @@ No. QR codes are generated locally from the device portal URL. No device URL, to
 
 == Changelog ==
 
+= 5.2.2 =
+* Added and documented the public human-readable JavaScript source.
+* Shipped the distributed admin JavaScript in human-readable form; no build step is required.
+* Added the public development repository reference.
+
 = 5.2.1 =
 * Renamed the plugin to GPSoftwareServices Support Manager and adopted the requested `gpsoftwareservices-support-manager` slug and text domain.
 * Replaced short internal identifiers with the distinctive `gpsuma` prefix and added automatic migration from legacy `gat_*` data.
@@ -102,6 +107,9 @@ No. QR codes are generated locally from the device portal URL. No device URL, to
 * Improved customer portal, reporting, contracts and intervention management.
 
 == Upgrade Notice ==
+
+= 5.2.2 =
+Adds publicly documented, human-readable JavaScript source for WordPress.org review.
 
 = 5.2.1 =
 Required naming and compliance update for WordPress.org review. Existing legacy tables, settings, customer roles and portal shortcode content are migrated automatically.
