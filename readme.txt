@@ -105,3 +105,14 @@ No. QR codes are generated locally from the device portal URL. No device URL, to
 
 = 5.2.1 =
 Required naming and compliance update for WordPress.org review. Existing legacy tables, settings, customer roles and portal shortcode content are migrated automatically.
+== Development ==
+
+The complete source code for this plugin is publicly available at:
+
+https://github.com/GPSoftwareServices/gpsoftwareservices-support-manager
+
+The human-readable JavaScript source is available under:
+
+assets/src/admin-v2.source.js
+
+No build step is required.
